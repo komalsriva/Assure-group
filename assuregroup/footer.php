@@ -131,6 +131,7 @@ if ( has_custom_logo() ) {
         <script src="<?php echo get_template_directory_uri();?>/assets/js/plugins.js"></script>
         <script src="<?php echo get_template_directory_uri();?>/assets/js/main.js"></script>
 		<script src="<?php echo get_template_directory_uri();?>/assets/js/vendor/main.js"></script>
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
    <?php wp_footer();?>   
   
 </body>

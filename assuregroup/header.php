@@ -3,6 +3,7 @@
 <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <title><?php bloginfo('title');?></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,6 +21,7 @@
             <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/slick.css">
             <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/nice-select.css">
             <link rel="stylesheet" href="<?php echo get_template_directory_uri();?>/assets/css/style.css">
+
 		
    </head>
    <?php wp_head();?>
@@ -29,7 +31,7 @@
     <div class="container">
     <div class="row">
     <div class="col-xl-6">
-    <p><i class="ti-email"> </i> <a href="#"> contact@assureinfra.com</a></p>
+    <p><i class="ti-email"> </i><a href="#"> contact@assureinfra.com</a></p>
     <p><i class="ti-tablet"></i> +91- 8233 359 128 </p>
     </div>
 		
@@ -47,12 +49,15 @@
    
 </div>
 <!--header-menu-->
+<header>
+     <!--header-menu-->
 <nav class="navbar navbar-expand-lg navbar-light">
 
   <div class="logo">
 <div class="pos-f-t">
   <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
+     
       <span class="text-muted">Toggleable via the navbar brand.</span>
     </div>
   </div>
@@ -79,16 +84,17 @@ if ( has_custom_logo() ) {
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mx-auto">
 	   <li class="nav-item dropdown">
-        <a class="nav-link dropdown text-dark" href="#" id="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-active">
+        <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Company
         </a>
+		<span class="slicknav_arrow">+</span>
   <div class="dropdown-content">
- <a href="Company.html">About us</a>
- <a href="Company.html">Our Vision & Mission</a>
- <a href="Company.html">Our Principle</a>
- <a href="Company.html">CSR</a>
- <a href="board of Director.html">Board of Directors</a>
- <a href="leadership.html">Leadership Team</a>
+ <a href="india.html">About us</a>
+ <a href="mynmar.html">Myanmar</a>
+ <a href="srilanka.html">Srilanka</a>
+ <a href="philippines.html">Philippines</a>
+ <a href="nepal.html">Nepal</a>
+ <a href="thailand.html">Thailand</a>
   </div>
 
 
@@ -107,13 +113,14 @@ if ( has_custom_logo() ) {
 	       <li class="nav-item">
         <a class="nav-link text-dark" href="#">Policy & Certifications </a>
       </li> 
-	   <li class="nav-item">
-        <a class="nav-link text-dark" href="#">Contact  </a>
-      </li> 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Country
-        </a>
+	   
+      
+	       <li class="nav-item">
+        <a class="nav-link text-dark" href="#">Contact</a>
+      </li>                           
+   <div class="header-right-btn f-right d-none d-lg-block m-4">                                
+                              <div class="dropdown">
+  <span> Country <i class="fas fa-globe"> </i></span>
   <div class="dropdown-content">
  <a href="india.html">India</a>
  <a href="mynmar.html">Myanmar</a>
@@ -122,14 +129,15 @@ if ( has_custom_logo() ) {
  <a href="nepal.html">Nepal</a>
  <a href="thailand.html">Thailand</a>
   </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+</div>
+ </div>                        
+	  </ul>
+	  
+</nav>      
+</header>
+<!-- Navigation  -->
 
-
-
-
+</body>
 <?php
   if(is_front_page()){
 echo do_shortcode('[smartslider3 slider="18"]');

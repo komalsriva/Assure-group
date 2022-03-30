@@ -314,7 +314,6 @@ color: 	#0a62f9;
 }
 .dropdown::after {
   background-image: url(../img/drop.png);
-    position: absolute;
     content: "";
     z-index: -1;
     min-height: 11px;
@@ -5216,6 +5215,7 @@ width: 40px;
 	margin:0;
 	padding:0;
 	font-size:13px;
+	color:#fff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -8245,6 +8245,7 @@ max-width:100%;
 .for-mobil-country a{ padding-left:6px !important }
 .for-mobil-country a i{color: #ee0000;}
 .footer-copy-right p{text-align:center !important;}
+color:#fff;
 }
 
 .tlp-portfolio button {
@@ -8348,6 +8349,10 @@ header.navbar {
     letter-spacing: 1px;
     color: #fff;
    font-family: 'Gothic A1', sans-serif;
+  
+}
+.navbar-nav .nav-item .nav-link a:hover{
+	border-bottom: 1px solid red;
 }
 .navbar-nav .nav-item .nav-link:hover{color:#fed136;}
 .navbar-expand-md .navbar-nav .dropdown-menu{
@@ -8449,7 +8454,7 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 	.banner-text{
 	padding:150px 0 150px 0;
 }
-	.banner-sub-heading{
+.banner-sub-heading{
 	font-size: 23px;
     font-weight: 200;
     line-height: 23px;
@@ -8457,7 +8462,12 @@ nav{-webkit-transition: padding-top .3s,padding-bottom .3s;
 }
 }
 .navbar-nav.nav-item.nav-activea:hover{
-	border-bottom: 5px solid red;
+   border-bottom: 5px solid red;
 }
 
+.navbar navbar-expand-lg navbar-light{
+	  box-shadow: 5px 10px #888888;
+
+
+}
 
